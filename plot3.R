@@ -29,7 +29,7 @@ plot(myData$DateTime, myData$Sub_metering_1, col="red",
 lines(myData$DateTime, myData$Sub_metering_2,col="green")
 lines(myData$DateTime, myData$Sub_metering_3,col="blue")
 legend("topright",c("sub_metering_1",
-                    + "sub_metering_2","sub_metering_3"),col=c("red","green","blue"),lwd=1)
+                    "sub_metering_2","sub_metering_3"),col=c("red","green","blue"),lwd=1)
 dev.off()
 
 
