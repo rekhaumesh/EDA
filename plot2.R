@@ -11,6 +11,7 @@ mysubData<-subset(data2, Date >= "2007-2-1" & Date <= "2007-2-2")
 #PLOT2
 myData$DateTime<-paste(myData$Date,myData$Time)
 myData$DateTime<-strptime(myData$DateTime, format = "%Y-%m-%d %H:%M:%S")
+myData$Global_active_power<-as.numeric(myData$Global_active_power)
 png("plot2.png",bg="transparent")
 plot(myData$DateTime,myData$Global_active_power, type="l",ylab="Global Active Power (kilowatts)", xlab ="")
 dev.off()
