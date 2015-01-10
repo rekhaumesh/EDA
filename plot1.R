@@ -25,9 +25,9 @@ hist(myData$Global_active_power,col="red",xlab="Global Power Active", main="Glob
 dev.off()
 
 #PLOT2
-myData$DateTime<-paste(myData$Date,myData$Time)
-myData$DateTime<-strptime(myData$DateTime, format = "%Y-%m-%d %H:%M:%S")
-png("plot2.png",bg="transparent")
-plot(myData$DateTime,myData$Global_active_power, type="l",ylab="Global Active Power (kilowatts)", xlab ="")
-dev.off()
+#myData$DateTime<-paste(myData$Date,myData$Time)
+#myData$DateTime<-strptime(myData$DateTime, format = "%Y-%m-%d %H:%M:%S")
+#png("plot2.png",bg="transparent")
+#plot(myData$DateTime,myData$Global_active_power, type="l",ylab="Global Active #Power (kilowatts)", xlab ="")
+#dev.off()
 
